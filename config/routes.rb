@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+  get 'sessions/create_guest'
+  get 'sessions/create'
+  get 'sessions/destroy'
   root "health_pages#search"
 
   resources :users

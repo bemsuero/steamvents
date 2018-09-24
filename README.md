@@ -16,8 +16,11 @@ Mental health website covering peer to peer interaction, allowing for article se
 
 * Done so Far *
 - Skeleton has been created.
+- API is accessible and env variable has been put in place.
+- Search feature is working at the basic level.
+
 
 * On the to do list *
 - Schema for website, who belongs to what.
 - Basic layout.
-- API working.
+- Get users and guest users input. (starting with guest users)

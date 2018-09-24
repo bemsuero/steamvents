@@ -11,7 +11,13 @@
 
   <body>
     <div class="header">
-      <%= link_to "Home", root_path %>
+      <% if logged_in? %>
+      <%= link_to "Steam Vents", @user %> <br>
+      <%= link_to "Health Search", root_path %> <br>
+      <% else %>
+      <%= link_to "Steam Vents", new_user_path %> <br>
+      <%= link_to "Health Search", root_path %> <br>
+      <% end %>
     </div>
     <%= yield %>
   </body>

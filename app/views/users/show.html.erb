@@ -1,2 +1,7 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<% if logged_in? %>
+
+<%= render "posts" %>
+<% else %>
+<h2>Post as a Guest</h2>
+
+<%= render "posts" %>
