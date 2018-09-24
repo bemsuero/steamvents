@@ -13,3 +13,11 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Page to search for articles dealing with mental health.
 - Page for searching for doctors in an area.
 - Page for known emergency hotline numbers.
+
+* Done so Far *
+- Skeleton has been created.
+
+* On the to do list *
+- Schema for website, who belongs to what.
+- Basic layout.
+- API working.

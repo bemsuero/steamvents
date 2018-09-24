@@ -1,0 +1,2 @@
+module HealthPagesHelper
+end
