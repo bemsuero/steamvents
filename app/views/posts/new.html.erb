@@ -1,0 +1,10 @@
+<% if logged_in? %>
+
+<%= render "posts" %>
+<% else %>
+<h2>Post as a Guest</h2>
+
+<%= render "posts" %>
+<%= render "index" %>
+
+<% end %>

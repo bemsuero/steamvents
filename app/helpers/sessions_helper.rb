@@ -15,4 +15,22 @@ module SessionsHelper
     session.delete(:user_id)
     @current_user = nil
   end
+
+  def guest_log_in(guest)
+    session[:guest_id] = guest.id
+  end
+
+  def current_guest
+    @current_guest ||= GuestUser.find_by(id: session[:guest_id]) if session[:guest_id]
+  end
+
+  def guest_logged_in?
+    !current_guest.nil?
+  end
+
+  def guest_log_out
+    session.delete(:guest_id)
+    @current_guest = nil
+  end
+
 end

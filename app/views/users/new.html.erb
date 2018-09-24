@@ -8,3 +8,15 @@
 <%= u.password_field :password_confirmation, placeholder: "Confirm Password" %><br>
 <%= u.submit "Create User" %>
 <% end %>
+
+<%= link_to "Already have an account?", sessions_new_path %> <br>
+
+<%= link_to "Continue as Guest?", "#" %>
+
+<div class="guestSignIn">
+  <%= form_for @guest_user do |guest| %>
+  <%= guest.text_field :name, placeholder: "name" %> <br>
+  <%= guest.email_field :email, placeholder: "email" %> <br>
+  <%= guest.submit "Create Guest" %>
+  <% end %>
+</div>

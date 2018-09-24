@@ -1,0 +1,9 @@
+<% if @posts == nil %>
+<p>No posts yet!</p>
+<% else %>
+<div class="posts">
+<% @posts.each do |po| %>
+<%= po.content %> <br>
+<% end %>
+</div>
+<% end %>
