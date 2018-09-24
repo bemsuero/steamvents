@@ -21,6 +21,7 @@ ActiveRecord::Schema.define(version: 2018_09_24_132351) do
 
   create_table "posts", force: :cascade do |t|
     t.text "content"
+    t.text "owner"
     t.integer "guest_user_id"
     t.integer "user_id"
     t.string "slug"

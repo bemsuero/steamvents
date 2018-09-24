@@ -3,7 +3,7 @@
 <% else %>
 <div class="posts">
 <% @posts.each do |po| %>
-<%= po.content %> <br>
+<%= po.content %> Posted by: <%= po.owner %> <br>
 <% end %>
 </div>
 <% end %>
