@@ -1,4 +1,9 @@
 class UsersController < ApplicationController
+  require 'net/http'
+  require 'uri'
+  require 'json'
+  require 'httparty'
+  
   def new
   end
 
@@ -10,4 +15,7 @@ class UsersController < ApplicationController
 
   def contact
   end
+
+  private
+
 end

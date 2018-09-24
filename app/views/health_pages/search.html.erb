@@ -1,2 +1,6 @@
-<h1>HealthPages#search</h1>
-<p>Find me in app/views/health_pages/search.html.erb</p>
+<h2>Search Health Topics of your choice.</h2>
+
+<%= form_tag(results_path, method: "get") do %>
+<%= label_tag(:search, "What topic would you like to know about?") %><br>
+<%= text_field_tag(:search) %><%= submit_tag "Results", class: 'form_button' %>
+<% end %>
