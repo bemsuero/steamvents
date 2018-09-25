@@ -3,8 +3,13 @@
 <p>No posts yet!</p>
 <% else %>
 <div class="posts">
-<% @posts.each do |po| %>
+<% @posts.reverse.each do |po| %>
+<div class="">
 <%= po.content %> Posted by: <%= po.owner %> <br>
+<% if logged_in? && current_user.username == po.owner %>
+<%= link_to "Delete Post", post_path(po.id), :method=> :delete, data: {confirm: 'Delete Post?', remote: true},  class: "terminate" %>
+<% end %>
+</div>
 <% end %>
 </div>
 <% end %>

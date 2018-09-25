@@ -7,6 +7,11 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
   </head>
 
   <body>
@@ -14,14 +19,17 @@
       <% if logged_in? %>
       <%= link_to "Steam Vents", user_path(current_user) %> <br>
       <%= link_to "Health Search", root_path %> <br>
+      <%= link_to "Help Section", help_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% elsif guest_logged_in? %>
       <%= link_to "Steam Vents", new_post_path %> <br>
       <%= link_to "Health Search", root_path %> <br>
+      <%= link_to "Help Section", help_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% else %>
       <%= link_to "Steam Vents", new_user_path %> <br>
       <%= link_to "Health Search", root_path %> <br>
+      <%= link_to "Help Section", help_path %> <br>
       <%= link_to "Log In", sessions_new_path %> <br>
       <% end %>
     </div> <br>

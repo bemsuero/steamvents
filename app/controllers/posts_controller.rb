@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
   def new
     if logged_in? || guest_logged_in?
     @post = Post.new
@@ -36,6 +37,14 @@ class PostsController < ApplicationController
       redirect_to new_post_path
     end
   end
+
+  def destroy
+  post = Post.find(params[:id])
+  respond_to do |format|
+      format.js
+    end
+    post.destroy
+end
 
   def index
     @posts = Post.all

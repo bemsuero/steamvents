@@ -26,6 +26,9 @@ class HealthPagesController < ApplicationController
     end
   end
 
+  def help
+  end
+
   private
 
 end

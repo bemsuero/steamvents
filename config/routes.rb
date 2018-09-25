@@ -9,8 +9,12 @@ Rails.application.routes.draw do
   delete 'sessions/logout' => 'sessions#destroy'
   delete 'sessions/guest_logout' => 'sessions#destroy_guest'
 
+  get "post/:slug" => "posts#show"
+
   get "search" => "health_pages#search"
   get "results" => "health_pages#results"
+  get "help" => "health_pages#help"
+
   get "guest_users" => "users#create_guest_users"
   post "guest_users" => "users#create_guest_users"
   get "posts" => "users#_posts"

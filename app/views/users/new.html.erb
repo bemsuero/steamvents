@@ -1,3 +1,5 @@
+
+<div class="forms">
 <h2>Create an Account</h2>
 <%= form_for @user do |u| %>
 <%= u.text_field :username, placeholder: "Enter a Username", required: true %><br>
@@ -6,14 +8,14 @@
 <%= u.email_field :email, placeholder: "Enter an Email", required: true %><br>
 <%= u.password_field :password, placeholder: "Enter Password", required: true %><br>
 <%= u.password_field :password_confirmation, placeholder: "Confirm Password", required: true %><br>
-<%= u.submit "Create User" %>
+<%= u.submit "Create User" %> <br> <br>
 <% end %>
+<%= link_to "Already have an account?", sessions_new_path, class: "buttonLinks"%> <br>
+<button class="guestLogIn"> Continue as a Guest? </button>
+</div>
 
-<%= link_to "Already have an account?", sessions_new_path %> <br>
 
-<%= link_to "Continue as Guest?", "#" %>
-
-<div class="guestSignIn">
+<div class="guestSignIn hide">
   <%= form_for @guest_user do |guest| %>
   <%= guest.text_field :name, placeholder: "name" %> <br>
   <%= guest.email_field :email, placeholder: "email", required: true %> <br>

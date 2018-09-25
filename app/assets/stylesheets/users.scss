@@ -1,3 +1,16 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.guestSignIn {
+
+}
+
+.hide {
+  visibility: hidden;
+  transition-duration: 2s;
+}
+
+.forms {
+  margin: 1%;
+}
