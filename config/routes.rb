@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "health_pages#search"
+  root "health_pages#about"
 
   resources :users
   resources :posts
@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   get "search" => "health_pages#search"
   get "results" => "health_pages#results"
   get "help" => "health_pages#help"
+  get "about" => "health_pages#about"
 
   get "guest_users" => "users#create_guest_users"
   post "guest_users" => "users#create_guest_users"

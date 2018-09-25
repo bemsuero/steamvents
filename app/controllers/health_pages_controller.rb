@@ -5,9 +5,6 @@ class HealthPagesController < ApplicationController
   require 'httparty'
 
   def search
-  end
-
-  def results
     search = params[:search]
     url = "https://healthfinder.gov/api/v2/topicsearch.json?api_key=#{ENV['HEALTH_API']}&Keyword=#{search}"
     #don't forget to take API key out.
@@ -20,10 +17,13 @@ class HealthPagesController < ApplicationController
     # @data = response.parsed_response
     if @data["Result"]["Total"] == "0"
       @results = "We apologize but there is no information available for this topic."
-      @internet = "https://www.google.com/search?&q=" + "#{search} " + "medical"
+      @internet = "https://www.google.com/search?&q=" + "#{search} " + "health"
     else
       @results = @data["Result"]["Resources"]["Resource"]
     end
+  end
+
+  def results
   end
 
   def help

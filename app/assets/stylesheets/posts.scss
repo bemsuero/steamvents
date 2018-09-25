@@ -1,3 +1,45 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.terminate {
+  text-decoration: none;
+  color: rgb(255,0,0)
+}
+
+.forms {
+  margin-left: 33%;
+  margin-right: 33%;
+  margin-top: 5%;
+}
+
+.forms form {
+  margin-left: 33%;
+  margin-right: 33%;
+}
+.forms button {
+margin-left: 33%;
+margin-right: 33%;
+}
+.forms a {
+margin-left: 33%;
+margin-right: 33%;
+}
+
+.posts {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
+}
+
+.onePost {
+  margin-bottom: 5%;
+}
+
+.postBackground {
+  background: url("/ventbackground.png");
+  background-size: cover;
+  height: 90vh;
+  overflow-y: scroll;
+
+}

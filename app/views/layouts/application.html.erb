@@ -7,33 +7,45 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
-    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
-
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- Animation -->
+    <link rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+<!-- Jquery -->
+<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script>
   </head>
 
   <body>
+  <div class="animated fadeIn">
     <div class="header">
       <% if logged_in? %>
       <%= link_to "Steam Vents", user_path(current_user) %> <br>
-      <%= link_to "Health Search", root_path %> <br>
-      <%= link_to "Help Section", help_path %> <br>
+      <%= link_to "Health Search", search_path %> <br>
+      <%= link_to "Looking for Help?", help_path %> <br>
+      <%= link_to "About", about_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% elsif guest_logged_in? %>
       <%= link_to "Steam Vents", new_post_path %> <br>
-      <%= link_to "Health Search", root_path %> <br>
-      <%= link_to "Help Section", help_path %> <br>
+      <%= link_to "Health Search", search_path %> <br>
+      <%= link_to "Looking for Help?", help_path %> <br>
+      <%= link_to "About", about_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% else %>
       <%= link_to "Steam Vents", new_user_path %> <br>
-      <%= link_to "Health Search", root_path %> <br>
-      <%= link_to "Help Section", help_path %> <br>
+      <%= link_to "Health Search", search_path %> <br>
+      <%= link_to "Looking for Help?", help_path %> <br>
+      <%= link_to "About", about_path %> <br>
       <%= link_to "Log In", sessions_new_path %> <br>
       <% end %>
     </div> <br>
+    <div class="mainContent">
     <%= yield %>
+  </div>
+    </div>
     <script data-iw-script='1' src='https://static-1.instawell.com/assets/widget/widget-main.js?campaign=steamvents&v=1.0'></script>
   </body>
 </html>

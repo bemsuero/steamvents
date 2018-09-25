@@ -8,17 +8,19 @@
 <%= u.email_field :email, placeholder: "Enter an Email", required: true %><br>
 <%= u.password_field :password, placeholder: "Enter Password", required: true %><br>
 <%= u.password_field :password_confirmation, placeholder: "Confirm Password", required: true %><br>
-<%= u.submit "Create User" %> <br> <br>
+<%= u.submit "Create User" %> <br>
 <% end %>
 <%= link_to "Already have an account?", sessions_new_path, class: "buttonLinks"%> <br>
 <button class="guestLogIn"> Continue as a Guest? </button>
-</div>
 
 
 <div class="guestSignIn hide">
+  <h2>Guest Sign In</h2>
   <%= form_for @guest_user do |guest| %>
   <%= guest.text_field :name, placeholder: "name" %> <br>
   <%= guest.email_field :email, placeholder: "email", required: true %> <br>
   <%= guest.submit "Create Guest" %>
   <% end %>
+</div>
+
 </div>

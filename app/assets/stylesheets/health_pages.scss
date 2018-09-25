@@ -2,8 +2,30 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.helpInfo {
+  margin-left: 20%;
+  margin-right: 20%;
+}
 
 .helpInfo a {
   text-decoration: none;
   color: var(--sky);
+}
+
+.hide {
+  visibility: hidden;
+  transition-duration: 2s;
+}
+
+.background {
+  background-image: url("/fountain.gif");
+  background-size: contain;
+  height: 70vh;
+  background-position: top;
+}
+
+.search {
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 5%;
 }

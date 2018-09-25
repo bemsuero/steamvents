@@ -21,11 +21,12 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Users and GuestUsers are able to log in and post.
 - All posts are able to be seen along with who posted them.
 - Users are able to delete their own posts.
-- Help page created.
+- Help page done.
 
 * On the to do list *
 - Basic layout.
-- Design.
+- Style must be applied to whole site.
+- Mobile first design?
 - Pages are rendered in the correct location.
 - Look for more health related APIs/resources.
 - ability to find "healthcare plans" using instawell. (will settle right now for instawell wigdet. also gives me a good idea for colorscheme.)

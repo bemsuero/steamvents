@@ -1,7 +1,11 @@
+<div class="postBackground">
+
+
 <% if logged_in? %>
 
 <%= render "posts/posts" %>
 <%= render "posts/index" %>
+
 <% else %>
 <h2>Post as a Guest</h2>
 
@@ -9,3 +13,4 @@
 <%= render "posts/index" %>
 
 <% end %>
+</div>
