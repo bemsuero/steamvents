@@ -30,6 +30,8 @@ class UsersController < ApplicationController
     if @guest_user.save
       guest_log_in(@guest_user)
       redirect_to new_post_path
+    else
+      @guest_user.errors.messages
     end
   end
 

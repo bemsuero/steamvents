@@ -1,11 +1,11 @@
 <h2>Create an Account</h2>
 <%= form_for @user do |u| %>
-<%= u.text_field :username, placeholder: "Enter a Username" %><br>
-<%= u.text_field :first_name, placeholder: "Enter a First Name" %><br>
-<%= u.text_field :last_name, placeholder: "Enter a Last Name" %><br>
-<%= u.email_field :email, placeholder: "Enter an Email" %><br>
-<%= u.password_field :password, placeholder: "Enter Password" %><br>
-<%= u.password_field :password_confirmation, placeholder: "Confirm Password" %><br>
+<%= u.text_field :username, placeholder: "Enter a Username", required: true %><br>
+<%= u.text_field :first_name, placeholder: "Enter a First Name", required: true %><br>
+<%= u.text_field :last_name, placeholder: "Enter a Last Name", required: true %><br>
+<%= u.email_field :email, placeholder: "Enter an Email", required: true %><br>
+<%= u.password_field :password, placeholder: "Enter Password", required: true %><br>
+<%= u.password_field :password_confirmation, placeholder: "Confirm Password", required: true %><br>
 <%= u.submit "Create User" %>
 <% end %>
 
@@ -16,7 +16,7 @@
 <div class="guestSignIn">
   <%= form_for @guest_user do |guest| %>
   <%= guest.text_field :name, placeholder: "name" %> <br>
-  <%= guest.email_field :email, placeholder: "email" %> <br>
+  <%= guest.email_field :email, placeholder: "email", required: true %> <br>
   <%= guest.submit "Create Guest" %>
   <% end %>
 </div>

@@ -18,9 +18,15 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Skeleton has been created.
 - API is accessible and env variable has been put in place.
 - Search feature is working at the basic level.
+- Users and GuestUsers are able to log in and post.
+- All posts are able to be seen along with who posted them.
 
 
 * On the to do list *
-- Schema for website, who belongs to what.
 - Basic layout.
-- Get users and guest users input. (starting with guest users)
+- Design.
+- Users are able to edit and delete their own posts.
+- Pages are rendered in the correct location.
+- Look for more health related APIs/resources.
+- If a post has an owner, the name is displayed, if not it will be filled in with a Cryptozoologist name.
+- ability to find "healthcare plans" using instawell. (will settle right now for instawell wigdet. also gives me a good idea for colorscheme.)

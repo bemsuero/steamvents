@@ -18,12 +18,14 @@
       <% elsif guest_logged_in? %>
       <%= link_to "Steam Vents", new_post_path %> <br>
       <%= link_to "Health Search", root_path %> <br>
-      <%= link_to("Log out", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
+      <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% else %>
       <%= link_to "Steam Vents", new_user_path %> <br>
       <%= link_to "Health Search", root_path %> <br>
+      <%= link_to "Log In", sessions_new_path %> <br>
       <% end %>
     </div> <br>
     <%= yield %>
+    <script data-iw-script='1' src='https://static-1.instawell.com/assets/widget/widget-main.js?campaign=steamvents&v=1.0'></script>
   </body>
 </html>

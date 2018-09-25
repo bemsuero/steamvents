@@ -26,7 +26,11 @@ class PostsController < ApplicationController
       @post.generate_slug
       @post.user_id = current_guest.id
       @post.guest_user_id = current_guest.id
-      @post.owner = Cryptozoologist.full_name
+        if current_guest.name == nil || current_guest.name == ""
+        @post.owner = Cryptozoologist.full_name
+        else
+        @post.owner = current_guest.name
+        end
       @post.save
       p @post.errors.messages
       redirect_to new_post_path
