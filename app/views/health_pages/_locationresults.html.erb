@@ -1,7 +1,0 @@
-<% if @generic != nil and @generic["Status"] == "ZERO_RESULTS" %>
-<p>No results for this search.</p> <br>
-<% else %>
-<% @generic_r.first(10).each do |s| %>
-<%= s["name"] %> <br>
-<% end %>
-<% end %>

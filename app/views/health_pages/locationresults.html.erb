@@ -1,0 +1,63 @@
+<div class="search">
+<div class="results animated fadeInUp">
+<h2>Results for "Doctors" with keyword "Mental".</h2>
+<% if @mental != nil && @mental["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @mental_r.zip(@m_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors" with keyword "Counseling".</h2>
+<% if @counseling != nil && @counseling["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @counseling_r.zip(@c_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors" with keyword "Psychiatrist".</h2>
+<% if @psychiatrist != nil && @psychiatrist["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @psychiatrist_r.zip(@psycha_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors" with keyword "Psychologist".</h2>
+<% if @psychologist != nil && @psychologist["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @psychologist_r.zip(@psycho_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors" with keyword "Therapy".</h2>
+<% if @therapy != nil && @therapy["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @therapy_r.zip(@t_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors" with keyword "Group".</h2>
+<% if @group != nil && @group["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @group_r.zip(@gr_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+<h2>Results for "Doctors".</h2>
+<% if @generic != nil && @generic["Status"] == "ZERO_RESULTS" %>
+<p>No results for this search.</p> <br>
+<% else %>
+<% @generic_r.zip(@g_urls).first(10).each do |s,url| %>
+<%= link_to "#{s['name']}", url, target: "blank" %> <br>
+<% end %>
+<% end %>
+
+</div>
+
+
+</div>
