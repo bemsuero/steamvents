@@ -26,20 +26,23 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Venting", user_path(current_user) %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
+      <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% elsif guest_logged_in? %>
       <%= link_to "Venting", new_post_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
+      <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% else %>
       <%= link_to "Venting", new_user_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
+      <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
-      <%= link_to "Log In", sessions_new_path %> <br>
+      <%= link_to "Log In", new_user_path %> <br>
       <% end %>
     </div> <br>
     <div class="mainContent">

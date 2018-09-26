@@ -3,6 +3,7 @@ class HealthPagesController < ApplicationController
   require 'uri'
   require 'json'
   require 'httparty'
+  require 'geocoder'
 
   def search
     search = params[:search]
@@ -27,6 +28,59 @@ class HealthPagesController < ApplicationController
   end
 
   def help
+  end
+
+  def location
+
+  end
+
+  def locationresults
+    location = Geocoder.search(params[:location])
+    lat = location.first.coordinates[0]
+    lon = location.first.coordinates[1]
+
+    generic_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&key=#{ENV['MAP_API']}"
+    uri = URI(generic_search)
+    response = Net::HTTP.get(uri)
+    @generic = JSON.parse(response)
+    @generic_r = @generic["results"]
+
+    counseling_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=counseling&key=#{ENV['MAP_API']}"
+    uri = URI(counseling_search)
+    response = Net::HTTP.get(uri)
+    @counseling = JSON.parse(response)
+    @counseling_r = @counseling["results"]
+
+    mental_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=mental&key=#{ENV['MAP_API']}"
+    uri = URI(mental_search)
+    response = Net::HTTP.get(uri)
+    @mental = JSON.parse(response)
+    @mental_r = @mental["results"]
+
+
+    psychiatrist_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=psychiatrist&key=#{ENV['MAP_API']}"
+    uri = URI(psychiatrist_search)
+    response = Net::HTTP.get(uri)
+    @psychiatrist = JSON.parse(response)
+    @psychiatrist_r = @psychiatrist["results"]
+
+    psychologist_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=psychologist&key=#{ENV['MAP_API']}"
+    uri = URI(psychologist_search)
+    response = Net::HTTP.get(uri)
+    @psychologist = JSON.parse(response)
+    @psychologist_r = @psychologist["results"]
+
+    therapy_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=therapy&key=#{ENV['MAP_API']}"
+    uri = URI(therapy_search)
+    response = Net::HTTP.get(uri)
+    @therapy = JSON.parse(response)
+    @therapy_r = @therapy["results"]
+
+    group_search = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=#{lat},#{lon}&radius=16093&type=doctor&keyword=group&key=#{ENV['MAP_API']}"
+    uri = URI(group_search)
+    response = Net::HTTP.get(uri)
+    @group = JSON.parse(response)
+    @group_r = @group["results"]
   end
 
   private

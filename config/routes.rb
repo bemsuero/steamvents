@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   get "results" => "health_pages#results"
   get "help" => "health_pages#help"
   get "about" => "health_pages#about"
+  get "location" => "health_pages#location"
+  get "locationresults" => "health_pages#locationresults"
 
   get "guest_users" => "users#create_guest_users"
   post "guest_users" => "users#create_guest_users"

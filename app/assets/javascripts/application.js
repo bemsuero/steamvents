@@ -19,9 +19,22 @@
 
 
 $(document).ready(function(){
-$( ".guestLogIn" ).click(function(){
-  $(".guestSignIn").removeClass("hide")
+  $( "#guestLogin" ).click(function(){
+    $(".guestSignIn").removeClass("hide")
+    });
+  $( "#guestClose" ).click(function(){
+    $(".guestSignIn").addClass("hide")
+    });
+  $( "#logIn" ).click(function(){
+    $(".logIn").removeClass("hide")
+    });
+  $( "#loginClose" ).click(function(){
+    $(".logIn").addClass("hide")
+    });
   });
+
+$(document).ready(function(){
+
   });
 
   scrollPos = 0;
