@@ -23,3 +23,13 @@ $( ".guestLogIn" ).click(function(){
   $(".guestSignIn").removeClass("hide")
   });
   });
+
+  scrollPos = 0;
+  window.addEventListener("scroll", function() {
+    scrollPos = window.scrollY;
+    if (scrollPos > 50) {
+      section1 = document.getElementById("aboutSectionOne");
+      section1.classList.add("revealed");
+      section1.classList.remove("hidden");
+    }
+  });

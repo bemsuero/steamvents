@@ -12,6 +12,21 @@
   color: var(--sky);
 }
 
+.helpInfo ul {
+  list-style: none;
+}
+
+.helpInfo li {
+transition-duration: 1s;
+}
+
+.helpInfo li:hover {
+  padding-left: 2%;
+  transition-duration: 1s;
+}
+
+
+
 .hide {
   visibility: hidden;
   transition-duration: 2s;
@@ -25,7 +40,21 @@
 }
 
 .search {
-  margin-left: 20%;
+  margin-left: 30%;
   margin-right: 20%;
   margin-top: 5%;
+}
+
+.results {
+  animation-delay: 0.2s;
+}
+
+.results a {
+  text-decoration: none;
+  color: var(--sky);
+  opacity: 0.75;
+}
+.results a:hover {
+  text-decoration: underline;
+  opacity: 1;
 }

@@ -17,7 +17,7 @@
  :root {
    --sky: #30affe;
    --orange: #ef5722;
-   --orangeDark: #e84534;
+   --orangeDark: rgba(252,71,52,.93);
    --border: 1px solid rgba(0,0,0,.2);
  }
 
@@ -37,10 +37,17 @@
 .header a {
   text-decoration: none;
   color: var(--sky);
+  opacity: 0.75;
+}
+.header a:hover {
+  text-decoration: underline;
+  opacity: 1;
 }
 
 h2  {
   color: var(--orangeDark);
+  margin-top: 5%;
+  text-shadow: 1px 1px 2px black;
 }
 
 .mainContent {
@@ -69,22 +76,6 @@ h2  {
   text-align: center;
 }
 
-button {
-  text-decoration: none;
-  color: var(--orange);
-  background-color: white;
-  border-radius: 4px;
-  font-size: 1.5vh;
-  border: none;
-}
-
-.buttonLinks {
-  text-decoration: none;
-  color: var(--orange);
-  background-color: white;
-  border-radius: 4px;
-  font-size: 1.5vh;
-}
 
 .instawell-widget-cont {
 

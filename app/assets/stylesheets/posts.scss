@@ -7,25 +7,6 @@
   color: rgb(255,0,0)
 }
 
-.forms {
-  margin-left: 33%;
-  margin-right: 33%;
-  margin-top: 5%;
-}
-
-.forms form {
-  margin-left: 33%;
-  margin-right: 33%;
-}
-.forms button {
-margin-left: 33%;
-margin-right: 33%;
-}
-.forms a {
-margin-left: 33%;
-margin-right: 33%;
-}
-
 .posts {
   margin-left: 20%;
   margin-right: 20%;
@@ -33,7 +14,14 @@ margin-right: 33%;
 }
 
 .onePost {
+  margin-left: 20%;
+  margin-right: 20%;
   margin-bottom: 5%;
+  border: var(--border);
+  border-radius: 8px;
+  padding: 2%;
+  opacity: 0.5;
+  box-shadow: 1px 1px 8px rgb(147,147,147);
 }
 
 .postBackground {
@@ -42,4 +30,18 @@ margin-right: 33%;
   height: 90vh;
   overflow-y: scroll;
 
+}
+
+#aboutSectionOne {
+  animation-delay: 1s;
+}
+
+.revealed {
+  opacity: 1;
+  transition-duration: 2s;
+}
+
+.hidden {
+  opacity: 0;
+  transition-duration: 2s;
 }
