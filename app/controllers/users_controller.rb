@@ -43,6 +43,14 @@ class UsersController < ApplicationController
     @posts = Post.all
   end
 
+  def destroy
+  post = Post.find(params[:id])
+  respond_to do |format|
+      format.js
+    end
+    post.destroy
+end
+
   def contact
   end
 

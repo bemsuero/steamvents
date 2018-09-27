@@ -10,19 +10,22 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <!-- Vue -->
-    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     <!-- Animation -->
     <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 <!-- Jquery -->
 <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
 
   <body>
   <div class="animated fadeIn">
     <div class="header">
       <% if logged_in? %>
+      <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", user_path(current_user) %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
@@ -30,6 +33,7 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "About", about_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% elsif guest_logged_in? %>
+      <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_post_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
@@ -37,6 +41,7 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "About", about_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
       <% else %>
+      <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_user_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>

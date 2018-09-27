@@ -24,14 +24,17 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Users are able to delete their own posts.
 - Help page done.
 - A lot of the styling is done.
+- Implement maps, searching for Drs in certain areas.
 
 * On the to do list *
 - "Additional Resources" link to get some extra features without making the nav super big.
 - Basic layout.
+- cancel account
+- account recovery
+- get VUE functions.
 - A report feature (maybe a gem) for the comments.
-- Style must be applied to whole site.
+- Styling link pages and search bar pages and vents page.
 - Mobile first design?
-- Pages are rendered in the correct location.
-- Implement maps, searching for Drs in certain areas.
 - Look for more health related APIs/resources.
 - ability to find "healthcare plans" using instawell. (will settle right now for instawell wigdet. also gives me a good idea for colorscheme.)
+- Implement other ideas from user feedback.

@@ -24,6 +24,11 @@
  html {
    font-family: 'Poppins', sans-serif;
    line-height: 3vh;
+   background-color: rgba(242,222,236,.76);
+ }
+
+ i {
+   color: var(--sky);
  }
 
  .header {
@@ -78,9 +83,9 @@ h2  {
 
 
 .instawell-widget-cont {
-
+background-color: rgba(242,222,236,.76);
 }
 
 div .instawell-widget-inner-cont {
-
+background-color: rgba(242,222,236,.76);
 }

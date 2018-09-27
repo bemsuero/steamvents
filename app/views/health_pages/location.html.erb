@@ -2,8 +2,7 @@
 <h2>Services Search</h2>
 <%= form_tag(locationresults_path, method: "get") do %>
   <%= label_tag(:location, "Enter Address: ") %><%= text_field_tag(:location) %>
-  <br>
-  <%= submit_tag "Search" %>
+  <%= submit_tag "Search", data: { disable_with: "Loading Results..." } %>
 <% end %>
 
 </div>
