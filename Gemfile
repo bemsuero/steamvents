@@ -29,6 +29,9 @@ gem "httparty"
 gem 'cryptozoologist'
 gem "jquery-rails"
 gem "geocoder"
+gem 'webpacker'
+gem 'foreman'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
