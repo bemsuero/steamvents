@@ -26,6 +26,7 @@ Mental health website covering peer to peer interaction, allowing for article se
 - A lot of the styling is done.
 - Implement maps, searching for Drs in certain areas.
 - App is on Vue, with some implementation.
+- Deployed to heroku.
 
 * On the to do list *
 - "Additional Resources" link to get some extra features without making the nav super big.

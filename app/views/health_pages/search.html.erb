@@ -4,7 +4,7 @@
 
 <%= form_tag(search_path, method: "get") do %>
 <%= label_tag(:search, "What topic would you like to know about?") %><br>
-<%= text_field_tag(:search) %><%= submit_tag "Search", class: 'form_button' %> <br><br>
+<%= text_field_tag(:search) %><%= submit_tag "Search", class: 'form_button', data: { disable_with: "Loading Results..." }  %> <br><br>
 <% end %>
 
 <div class="results animated fadeInUp">
