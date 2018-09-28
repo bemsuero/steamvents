@@ -4,22 +4,11 @@ import Vue from 'vue/dist/vue.esm'
 Vue.use(TurbolinksAdapter)
 
 
-var about = document.getElementById('aboutSectionOne');
-
 document.addEventListener('turbolinks:load', () => {
-const about = new Vue({
+const aboutSection = new Vue({
   el: "#aboutSectionOne",
   data: {
-    seen: false
+    show: false
   }
 })
-})
-
-about.addEventListener('turbolinks:scroll', () => {
-  const about = new Vue({
-    el: "#aboutSectionOne",
-    data: {
-      seen: true
-    }
-  })
 })

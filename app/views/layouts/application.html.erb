@@ -34,6 +34,10 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
+      <!-- used for debugging Vue-->
+<div id='hello'>
+  <span v-if="seen"> {{message}} </span>
+  </div>
       <% elsif guest_logged_in? %>
       <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_post_path %> <br>
@@ -42,6 +46,10 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
+      <!-- used for debugging Vue-->
+<div id='hello'>
+  <span v-if="seen"> {{message}} </span>
+  </div>
       <% else %>
       <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_user_path %> <br>
@@ -49,9 +57,10 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Help and Hotlines", help_path %> <br>
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
-      <!-- used for debugging Vue--> <div id='hello'>
+          <!-- used for debugging Vue-->
+   <div id='hello'>
       <span v-if="seen"> {{message}} </span>
-      </div> 
+      </div>
       <% end %>
     </div> <br>
     <div class="mainContent">
