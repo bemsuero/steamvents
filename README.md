@@ -25,13 +25,13 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Help page done.
 - A lot of the styling is done.
 - Implement maps, searching for Drs in certain areas.
+- App is on Vue, with some implementation.
 
 * On the to do list *
 - "Additional Resources" link to get some extra features without making the nav super big.
 - Basic layout.
 - cancel account
 - account recovery
-- get VUE functions.
 - A report feature (maybe a gem) for the comments.
 - Styling link pages and search bar pages and vents page.
 - Mobile first design?

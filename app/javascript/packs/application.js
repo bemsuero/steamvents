@@ -41,12 +41,12 @@ import Vue from 'vue/dist/vue.esm'
 Vue.use(TurbolinksAdapter)
 
 
-document.addEventListener('turbolinks:load', () => {
-  const viewtest = new Vue({
-    el: '#hello',
-    data: {
-      message: "Everything is working!",
-      seen: true
-    }
-  })
-})
+// document.addEventListener('turbolinks:load', () => {
+//   const viewtest = new Vue({
+//     el: '#hello',
+//     data: {
+//       message: "Everything is working!",
+//       seen: true
+//     }
+//   })
+// })
