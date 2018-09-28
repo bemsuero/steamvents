@@ -62,6 +62,7 @@ const userBox = new Vue({
     show: false
   }
 })
+})
 const about = new Vue({
   el: "#aboutSectionOne",
   data: {
