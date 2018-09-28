@@ -66,13 +66,14 @@ const about = new Vue({
   el: "#aboutSectionOne",
   data: {
     seen: false
+  }
 })
-
-about.addEventListener('turbolinks:scroll'), () => {
+})
+about.addEventListener('turbolinks:scroll', () => {
   const about = new Vue({
     el: "#aboutSectionOne",
     data: {
       seen: true
     }
   })
-}
+})
