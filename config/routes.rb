@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root "health_pages#about"
 
   resources :users
@@ -22,6 +23,7 @@ Rails.application.routes.draw do
   post "guest_users" => "users#create_guest_users"
   get "posts" => "users#_posts"
   get "index" => "users#_index"
+  get "password_resets" => "password_resets#new"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
