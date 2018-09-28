@@ -16,15 +16,15 @@
     <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
 <!-- Jquery -->
-<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="//code.jquery.com/jquery-1.12.4.js"></script>
+<!-- <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="//code.jquery.com/jquery-1.12.4.js"></script> -->
 <!-- FontAwesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- Vue -->
   </head>
 
   <body>
-  <div class="animated fadeIn">
+      <div class="page animated fadeIn">
     <div class="header">
       <% if logged_in? %>
       <i class="fas fa-stream"></i>SteamVents<br><br>
@@ -49,12 +49,15 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Help and Hotlines", help_path %> <br>
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
+      <div id='hello'>
+      <span v-if="seen"> {{message}} </span>
+      </div>
       <% end %>
     </div> <br>
     <div class="mainContent">
     <%= yield %>
   </div>
-    </div>
+</div>
     <script data-iw-script='1' src='https://static-1.instawell.com/assets/widget/widget-main.js?campaign=steamvents&v=1.0'></script>
   </body>
 </html>

@@ -12,36 +12,33 @@
 //
 //= require jquery
 //= require rails-ujs
-// require turbolinks
+//= require turbolinks
 //= require activestorage
 //= require_tree .
 
 
-$(document).ready(function(){
-  $( "#guestLogin" ).click(function(){
-    $(".guestSignIn").removeClass("hide")
-    });
-  $( "#guestClose" ).click(function(){
-    $(".guestSignIn").addClass("hide")
-    });
-  $( "#logIn" ).click(function(){
-    $(".logIn").removeClass("hide")
-    });
-  $( "#loginClose" ).click(function(){
-    $(".logIn").addClass("hide")
-    });
-  });
+// $(document).ready(function(){
+//   $( "#guestLogin" ).click(function(){
+//     $(".guestSignIn").removeClass("hide")
+//     });
+//   $( "#guestClose" ).click(function(){
+//     $(".guestSignIn").addClass("hide")
+//     });
+//   $( "#logIn" ).click(function(){
+//     $(".logIn").removeClass("hide")
+//     });
+//   $( "#loginClose" ).click(function(){
+//     $(".logIn").addClass("hide")
+//     });
+//   });
 
-$(document).ready(function(){
 
-  });
-
-  scrollPos = 0;
-  window.addEventListener("scroll", function() {
-    scrollPos = window.scrollY;
-    if (scrollPos > 50) {
-      section1 = document.getElementById("aboutSectionOne");
-      section1.classList.add("revealed");
-      section1.classList.remove("hidden");
-    }
-  });
+  // scrollPos = 0;
+  // window.addEventListener("scroll", function() {
+  //   scrollPos = window.scrollY;
+  //   if (scrollPos > 50) {
+  //     section1 = document.getElementById("aboutSectionOne");
+  //     section1.classList.add("revealed");
+  //     section1.classList.remove("hidden");
+  //   }
+  // });

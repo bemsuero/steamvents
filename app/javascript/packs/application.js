@@ -7,18 +7,57 @@
 // To reference this file, add <%= javascript_pack_tag 'application' %> to the appropriate
 // layout file, like app/views/layouts/application.html.erb
 
+console.log('Hello World from Webpacker')
+
+// <div id='hello'>
+//   {{message}}
+//   <app></app>
+// </div>
+
+
+// import Vue from 'vue/dist/vue.esm'
+// import App from '../app.vue'
+//
+// document.addEventListener('DOMContentLoaded', () => {
+//   const app = new Vue({
+//     el: '#hello',
+//     data: {
+//       message: "Can you say hello?",
+//       seen: true
+//
+//     }
+//   })
+// })
+//
+// If the using turbolinks, install 'vue-turbolinks':
+
+// yarn add 'vue-turbolinks'
+
+// Then uncomment the code block below:
+
 import TurbolinksAdapter from 'vue-turbolinks'
 import Vue from 'vue/dist/vue.esm'
-import App from '../app.vue'
 
 Vue.use(TurbolinksAdapter)
 
 document.addEventListener('turbolinks:load', () => {
-  const app = new Vue({
+  const viewtest = new Vue({
     el: '#hello',
     data: {
-      message: "Can you say hello?"
-    },
-    components: { App }
+      message: "Can you say hello?",
+      seen: true
+    }
   })
+  const guestBox = new Vue({
+  el: '#guestBox',
+  data: {
+    show: false
+  }
+})
+const userBox = new Vue({
+  el: '#userBox',
+  data: {
+    show: false
+  }
+})
 })

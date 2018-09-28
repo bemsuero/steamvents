@@ -1,6 +1,6 @@
 
 <div class="forms">
-  <div id="loginClose" class="closeButton">x</div>
+  <div v-on:click="show = !show" id="loginClose" class="closeButton">x</div>
 
   <h2> Log In </h2>
 <%= form_for(:session, url: sessions_new_path) do |f| %>
