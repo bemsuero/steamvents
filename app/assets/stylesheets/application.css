@@ -111,7 +111,7 @@ background-color: rgba(242,222,236,.76);
   .background {
     height: 37vh;
     width: 103vw;
-    margin-top: -6%;
+    margin-top: 29%;
   }
 
   #introButton {
@@ -157,15 +157,9 @@ form textarea {
     margin-left: -23%;
 }
 
-.topics {
+h3  {
   margin-top: 60%;
-  line-height: 4.5vh;
 }
-
-.helpHeaders {
-    margin-top: 65%;
-}
-
 .helpInfo {
   line-height: 4vh;
 }

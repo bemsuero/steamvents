@@ -1,5 +1,5 @@
 <div class="search">
-<h2 class="helpHeaders">Services Search</h2>
+<h3>Services Search</h3>
 <%= form_tag(locationresults_path, method: "get") do %>
   <%= label_tag(:location, "Enter Address: ") %><%= text_field_tag(:location)%>
   <%= submit_tag "Search", data: { disable_with: "Loading Results..." } %>
