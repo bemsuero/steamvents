@@ -30,6 +30,7 @@ gem 'cryptozoologist'
 gem "jquery-rails"
 gem "geocoder"
 gem 'webpacker'
+gem 'rails-controller-testing'
 
 
 # Use ActiveStorage variant
