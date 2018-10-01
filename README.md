@@ -28,15 +28,13 @@ Mental health website covering peer to peer interaction, allowing for article se
 - Implement maps, searching for Drs in certain areas.
 - App is on Vue, with some implementation.
 - Deployed to heroku.
+- account recovery
+- Styling link pages and search bar pages and vents page.
 
 * On the to do list *
 - "Additional Resources" link to get some extra features without making the nav super big.
 - Basic layout.
 - cancel account
-- account recovery
-- A report feature (maybe a gem) for the comments.
-- Styling link pages and search bar pages and vents page.
-- Mobile first design?
 - Look for more health related APIs/resources.
 - ability to find "healthcare plans" using instawell. (will settle right now for instawell wigdet. also gives me a good idea for colorscheme.)
 - Implement other ideas from user feedback.
