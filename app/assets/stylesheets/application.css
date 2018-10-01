@@ -102,7 +102,7 @@ div .instawell-widget-inner-cont {
 background-color: rgba(242,222,236,.76);
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 410px) {
 
   html {
     line-height: 3vh;
@@ -160,8 +160,76 @@ form textarea {
 h3  {
   margin-top: 60%;
 }
-.helpInfo {
+.helpInfo ul {
   line-height: 4vh;
+  list-style: circle;
+}
+
+}
+
+@media only screen
+and (min-device-width : 411px)
+and (max-device-width : 736px) {
+
+  html {
+    line-height: 3vh;
+  }
+
+  .background {
+    height: 37vh;
+    width: 103vw;
+    margin-top: 29%;
+  }
+
+  #introButton {
+    margin-left: 34.5%;
+  }
+
+  .instawell-widget-iframe-outerwrap {
+    margin-bottom: -31%;
+}
+
+.campaign-page .campaign-widget-footer {
+    bottom: 10%;
+}
+
+.header {
+    top: 1%;
+    left: 36%;
+    text-shadow: 2px 2px 6px black;
+}
+
+.forms {
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-top: 25%;
+    padding-top: 0%;
+  }
+
+  .forms a {
+      margin-left: 22%;
+      margin-right: 20%;
+      padding-left: 7%;
+  }
+
+  .postBackground {
+    background-size: contain;
+}
+
+.mainContent h2 {
+  margin-top: 30%;
+}
+
+form textarea {
+    margin-left: -23%;
+}
+
+h3  {
+  margin-top: 60%;
+}
+.helpInfo ul {
+  line-height: 4vh;
+  list-style: circle;
 }
 
 }
