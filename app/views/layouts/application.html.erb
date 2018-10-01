@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>SteamVents</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= javascript_pack_tag 'application' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -33,7 +34,7 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Help and Hotlines", help_path %> <br>
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
-      <%= link_to("Log out", sessions_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
+      <%= link_to("Log out", sessions_logout_path,method: :delete) %> <br>
       <!-- used for debugging Vue
 <div id='hello'>
   <span v-if="seen"> {{message}} </span>
@@ -45,7 +46,7 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Help and Hotlines", help_path %> <br>
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
-      <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete, data: {confirm: 'Are you sure?'}) %> <br>
+      <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete) %> <br>
       <!-- used for debugging Vue
 <div id='hello'>
   <span v-if="seen"> {{message}} </span>

@@ -58,6 +58,10 @@ h2  {
   margin-top: 5%;
   text-shadow: 1px 1px 2px black;
 }
+h3  {
+  color: var(--orangeDark);
+  text-shadow: 1px 1px 2px black;
+}
 
 .mainContent {
   background-size: contain;
@@ -85,6 +89,10 @@ h2  {
   text-align: center;
 }
 
+.mainContent h3 {
+  text-align: center;
+}
+
 
 .instawell-widget-cont {
 background-color: rgba(242,222,236,.76);
@@ -92,4 +100,74 @@ background-color: rgba(242,222,236,.76);
 
 div .instawell-widget-inner-cont {
 background-color: rgba(242,222,236,.76);
+}
+
+@media only screen and (max-width: 375px) {
+
+  html {
+    line-height: 3vh;
+  }
+
+  .background {
+    height: 37vh;
+    width: 103vw;
+    margin-top: -6%;
+  }
+
+  #introButton {
+    margin-left: 34.5%;
+  }
+
+  .instawell-widget-iframe-outerwrap {
+    margin-bottom: -31%;
+}
+
+.campaign-page .campaign-widget-footer {
+    bottom: 10%;
+}
+
+.header {
+    top: 1%;
+    left: 36%;
+    text-shadow: 2px 2px 6px black;
+}
+
+.forms {
+    margin-left: 10%;
+    margin-right: 3%;
+    margin-top: 25%;
+    padding-top: 0%;
+  }
+
+  .forms a {
+      margin-left: 22%;
+      margin-right: 20%;
+      padding-left: 7%;
+  }
+
+  .postBackground {
+    background-size: contain;
+}
+
+.mainContent h2 {
+  margin-top: 30%;
+}
+
+form textarea {
+    margin-left: -23%;
+}
+
+.topics {
+  margin-top: 60%;
+  line-height: 4.5vh;
+}
+
+.helpHeaders {
+    margin-top: 65%;
+}
+
+.helpInfo {
+  line-height: 4vh;
+}
+
 }
