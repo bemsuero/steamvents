@@ -7,19 +7,18 @@ Rails.application.configure do
   config.cache_classes = true
 
   # email
-  config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'steamvents17@gmail.com'}
-  config.action_mailer.default_url_options = { :host => "steamvents.herokuapp.com" }
   config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-  address:              'smtp.gmail.com',
-  port:                 587,
-  domain:               'http://steamvents.herokuapp.com/',
-  user_name:            'steamvents17',
-  password:             ENV['GMAIL'],
-  authentication:       'plain',
-  enable_starttls_auto: true  }
+  host = 'steamvents.herokuapp.com'
+  config.action_mailer.default_url_options = { host: host }
+  ActionMailer::Base.smtp_settings = {
+    :address        => 'smtp.sendgrid.net',
+    :port           => '587',
+    :authentication => :plain,
+    :user_name      => ENV['SENDGRID_USERNAME'],
+    :password       => ENV['SENDGRID_PASSWORD'],
+    :domain         => 'heroku.com',
+    :enable_starttls_auto => true
 
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
