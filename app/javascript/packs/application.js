@@ -35,11 +35,11 @@ console.log('Hello World from Webpacker')
 
 // Then uncomment the code block below:
 
-import TurbolinksAdapter from 'vue-turbolinks'
-import Vue from 'vue/dist/vue.esm'
-
-Vue.use(TurbolinksAdapter)
-
+// import TurbolinksAdapter from 'vue-turbolinks'
+// import Vue from 'vue/dist/vue.esm'
+//
+// Vue.use(TurbolinksAdapter)
+//
 
 // document.addEventListener('turbolinks:load', () => {
 //   const viewtest = new Vue({

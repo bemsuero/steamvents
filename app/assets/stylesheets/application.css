@@ -127,11 +127,13 @@ h4  {
 
 
 .instawell-widget-cont {
-background-color: rgba(242,222,236,.76);
+background-color: rgba(242,222,236,0);
+border: none;
 }
 
 div .instawell-widget-inner-cont {
-background-color: rgba(242,222,236,.76);
+background-color: rgba(242,222,236,0);
+border: none;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 410px) {
@@ -165,7 +167,7 @@ background-color: rgba(242,222,236,.76);
 
 .header {
     top: 1%;
-    left: 28%;
+    left: 25%;
     text-align: center;
     text-shadow: 2px 2px 6px black;
 }
@@ -238,7 +240,7 @@ and (max-device-width : 736px) {
 
 .header {
     top: 1%;
-    left: 28%;
+    left: 25%;
       text-align: center;
     text-shadow: 2px 2px 6px black;
 }
