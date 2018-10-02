@@ -2,7 +2,7 @@
 <div class="forms">
   <div v-on:click="show = !show" id="loginClose" class="closeButton">x</div>
 
-  <h2> Log In </h2>
+  <h4> Log In </h4>
 <%= form_for(:session, url: sessions_new_path) do |f| %>
 <label>Email</label>
 <%= f.email_field :email, required: true %> <br>

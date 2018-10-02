@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>SteamVents</title>
+
       <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= javascript_pack_tag 'application' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!-- Font -->
@@ -16,9 +16,7 @@
     <!-- Animation -->
     <link rel="stylesheet"
 href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-<!-- Jquery -->
-<!-- <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="//code.jquery.com/jquery-1.12.4.js"></script> -->
+
 <!-- FontAwesome -->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <!-- Vue -->
@@ -67,6 +65,9 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <div class="mainContent">
     <%= yield %>
   </div>
+  <% flash.each do |key, value| %>
+        <div class="alert alert-<%= key %>" role="alert"><%= value %></div>
+      <% end %>
 </div>
     <script data-iw-script='1' src='https://static-1.instawell.com/assets/widget/widget-main.js?campaign=steamvents&v=1.0'></script>
   </body>

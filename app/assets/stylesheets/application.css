@@ -21,14 +21,39 @@
    --border: 1px solid rgba(0,0,0,.2);
  }
 
- .page {
-   animation-delay: 0.1s;
- }
+
 
  html {
    font-family: 'Poppins', sans-serif;
    line-height: 3vh;
    background-color: rgba(242,222,236,.76);
+ }
+
+ .alert {
+   position: absolute;
+   top: 0;
+   left: 0;
+   text-align: center;
+   width: 100%;
+   font-size: 3vh;
+   margin-bottom: 5%;
+   }
+
+  .alert-danger {
+   background-color: rgb(249,215,218);
+   color: rgb(126,28,36);
+ }
+  .alert-success {
+   background-color: rgb(212,237,218);
+   color: rgb(80,87,36);
+ }
+  .alert-alert {
+   background-color: rgb(255,243,205);
+   color: rgb(133,100,4);
+ }
+
+ .page {
+   animation-delay: 0.1s;
  }
 
  i {
@@ -62,6 +87,10 @@ h3  {
   color: var(--orangeDark);
   text-shadow: 1px 1px 2px black;
 }
+h4  {
+  color: var(--orangeDark);
+  text-shadow: 1px 1px 2px black;
+}
 
 .mainContent {
   background-size: contain;
@@ -92,6 +121,9 @@ h3  {
 .mainContent h3 {
   text-align: center;
 }
+.mainContent h4 {
+  text-align: center;
+}
 
 
 .instawell-widget-cont {
@@ -108,6 +140,11 @@ background-color: rgba(242,222,236,.76);
     line-height: 3vh;
   }
 
+  .alert {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
   .background {
     height: 37vh;
     width: 103vw;
@@ -128,7 +165,8 @@ background-color: rgba(242,222,236,.76);
 
 .header {
     top: 1%;
-    left: 36%;
+    left: 28%;
+    text-align: center;
     text-shadow: 2px 2px 6px black;
 }
 
@@ -150,7 +188,7 @@ background-color: rgba(242,222,236,.76);
 }
 
 .mainContent h2 {
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
 form textarea {
@@ -158,7 +196,7 @@ form textarea {
 }
 
 h3  {
-  margin-top: 60%;
+  margin-top: 70%;
 }
 .helpInfo ul {
   line-height: 4vh;
@@ -175,6 +213,11 @@ and (max-device-width : 736px) {
     line-height: 3vh;
   }
 
+  .alert {
+    padding-bottom: 2%;
+    padding-top: 2%;
+  }
+
   .background {
     height: 37vh;
     width: 103vw;
@@ -195,7 +238,8 @@ and (max-device-width : 736px) {
 
 .header {
     top: 1%;
-    left: 36%;
+    left: 28%;
+      text-align: center;
     text-shadow: 2px 2px 6px black;
 }
 
@@ -217,7 +261,7 @@ and (max-device-width : 736px) {
 }
 
 .mainContent h2 {
-  margin-top: 30%;
+  margin-top: 35%;
 }
 
 form textarea {
@@ -225,8 +269,9 @@ form textarea {
 }
 
 h3  {
-  margin-top: 60%;
+  margin-top: 70%;
 }
+
 .helpInfo ul {
   line-height: 4vh;
   list-style: circle;
