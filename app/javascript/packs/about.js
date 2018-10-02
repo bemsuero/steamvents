@@ -4,7 +4,7 @@ import Vue from 'vue/dist/vue.esm'
 Vue.use(TurbolinksAdapter)
 
 
-document.on('turbolinks:load', () => {
+document.addEventListener('turbolinks:load', () => {
 const aboutSection = new Vue({
   el: "#aboutSectionOne",
   data: {

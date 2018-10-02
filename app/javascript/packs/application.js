@@ -39,7 +39,7 @@ console.log('Hello World from Webpacker')
 // import Vue from 'vue/dist/vue.esm'
 //
 // Vue.use(TurbolinksAdapter)
-//
+
 
 // document.addEventListener('turbolinks:load', () => {
 //   const viewtest = new Vue({
