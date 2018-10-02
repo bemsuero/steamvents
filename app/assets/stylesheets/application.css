@@ -78,6 +78,13 @@
   opacity: 1;
 }
 
+.headerContainer {
+  background-color: rgba(242,222,236,.76);
+     padding: 5%;
+     border-radius: 8px;
+     margin-bottom: 2%;
+}
+
 h2  {
   color: var(--orangeDark);
   margin-top: 5%;
@@ -171,6 +178,9 @@ border: none;
     text-align: center;
     text-shadow: 2px 2px 6px black;
 }
+.headerContainer {
+background-color: rgba(0,0,0,0);
+}
 
 .forms {
     margin-left: 10%;
@@ -190,7 +200,7 @@ border: none;
 }
 
 .mainContent h2 {
-  margin-top: 35%;
+  margin-top: 45%;
 }
 
 form textarea {
@@ -244,7 +254,9 @@ and (max-device-width : 736px) {
       text-align: center;
     text-shadow: 2px 2px 6px black;
 }
-
+.headerContainer {
+background-color: rgba(0,0,0,0);
+}
 .forms {
     margin-left: 10%;
     margin-right: 3%;

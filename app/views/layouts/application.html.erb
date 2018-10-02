@@ -26,6 +26,7 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <div class="page animated fadeIn">
     <div class="header">
       <% if logged_in? %>
+      <div class="headerContainer">
       <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", user_path(current_user) %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
@@ -33,11 +34,14 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("Log out", sessions_logout_path,method: :delete) %> <br>
+      </div>
+    </div>
       <!-- used for debugging Vue
 <div id='hello'>
   <span v-if="seen"> {{message}} </span>
   </div>-->
       <% elsif guest_logged_in? %>
+      <div class="headerContainer">
       <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_post_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
@@ -45,17 +49,20 @@ href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
       <%= link_to("End Guest Session", sessions_guest_logout_path,method: :delete) %> <br>
+      </div>
       <!-- used for debugging Vue
 <div id='hello'>
   <span v-if="seen"> {{message}} </span>
   </div>-->
       <% else %>
+      <div class="headerContainer">
       <i class="fas fa-stream"></i>SteamVents<br><br>
       <%= link_to "Venting", new_user_path %> <br>
       <%= link_to "Health Article Search", search_path %> <br>
       <%= link_to "Help and Hotlines", help_path %> <br>
       <%= link_to "Location Search", location_path %> <br>
       <%= link_to "About", about_path %> <br>
+      </div>
           <!-- used for debugging Vue
    <div id='hello'>
       <span v-if="seen"> {{message}} </span>
