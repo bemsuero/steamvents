@@ -6,6 +6,8 @@ import Vue from 'vue/dist/vue.esm'
 Vue.use(TurbolinksAdapter)
 
 
+
+
 document.addEventListener('turbolinks:load', () => {
   const guestBox = new Vue({
   el: '#guestBox',
