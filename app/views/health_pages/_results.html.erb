@@ -1,8 +1,8 @@
 <% if @data["Result"]["Total"] == "0" %>
 <%= @results %> <br>
-<%= link_to "Try an internet wide search.", @internet %>
+<%= link_to "Try an internet wide search.", @internet, target: '_blank' %>
 <% else %>
 <% @results.first(10).map do |r| %>
-<%= link_to "#{r['Title']}", r['AccessibleVersion'] %> <br>
+<%= link_to "#{r['Title']}", r['AccessibleVersion'], target: '_blank' %> <br>
 <% end %>
 <% end %>
