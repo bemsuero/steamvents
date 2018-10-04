@@ -1,7 +1,5 @@
 # SteamVents
-* SITE STILL WORK IN PROGRESS *
-
-* SITE STILL WORK IN PROGRESS *
+https://steamvents.herokuapp.com/
 
 Ruby 2.5.1
 
